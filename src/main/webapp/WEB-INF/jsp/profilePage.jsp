@@ -12,7 +12,7 @@
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="#">WebSiteName</a>
+      <a class="navbar-brand" href="/"><img src="http://sgolifiles.images.s3.amazonaws.com/1520206707523-SocialMedia-300x212.png" width="25px" align="center">ActiveSocial.com</a>
     </div>
     <ul class="nav navbar-nav">
       <li class="active"><a href="/">Home</a></li>
@@ -109,7 +109,7 @@
 								<div class="widget-header widget-header-small">
 									<h4 class="widget-title smaller">
 										<i class="ace-icon fa fa-check-square-o bigger-110"></i>
-										Little About Me
+										About Me
 									</h4>
 								</div>
 

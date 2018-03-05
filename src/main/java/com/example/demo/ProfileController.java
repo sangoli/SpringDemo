@@ -53,7 +53,7 @@ public class ProfileController{
 		    	//request.getSession().setAttribute("key","No ImageLink");
 	    	//else
 	    	request.getSession().setAttribute("key",this.amazonClient.uploadFile(file));
-	    	return "Picture has been Succefully upload to "+ this.amazonClient.uploadFile(file);
+	    	return "Picture has been Succefully uploaded to "+ this.amazonClient.uploadFile(file);
 	    	//return (String)request.getSession().getAttribute("key");
 	    	
 	    	

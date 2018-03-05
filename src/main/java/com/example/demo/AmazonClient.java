@@ -31,19 +31,15 @@ public class AmazonClient extends HttpServlet{
     //HttpServletRequest request=null;
 
     private AmazonS3 s3client;
-    public static String yes="";  /*  @Value("${amazonProperties.endpointUrl}")
-    private String endpointUrl;
-    @Value("${amazonProperties.bucketName}")
-    private String bucketName;
-    @Value("${amazonProperties.accessKey}")
-    private String accessKey;
-    @Value("${amazonProperties.secretKey}")
-    private String secretKey;*/
-
+    public static String yes="";  
+	@Value("${accessKey}")
+	private String accessKey;
+    @Value("${secretKey}")
+	private String secretKey;
     @SuppressWarnings("deprecation")
 	@PostConstruct
     private void initializeAmazon() {
-        AWSCredentials credentials = new BasicAWSCredentials("AKIAIV7NTOPDCTMA4L2A", "rXJka11SdWxaLRhmLlRGwF6JnFrBJGxRlQvb127H");
+        AWSCredentials credentials = new BasicAWSCredentials(accessKey, secretKey);
         this.s3client = new AmazonS3Client(credentials);
     }
 
